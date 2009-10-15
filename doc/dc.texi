@@ -22,6 +22,7 @@
 @syncodeindex pg fn
 @syncodeindex tp fn
 
+@dircategory Math
 @ifinfo
 @direntry
 * dc: (dc).                   Arbitrary precision RPN ``Desktop Calculator''.

@@ -1,5 +1,6 @@
-This is bc.info, produced by makeinfo version 4.8 from bc.texi.
+This is bc.info, produced by makeinfo version 4.13 from bc.texi.
 
+INFO-DIR-SECTION Math
 START-INFO-DIR-ENTRY
 * bc: (bc).                    An arbitrary precision calculator language.
 END-INFO-DIR-ENTRY
@@ -1002,29 +1003,29 @@ The following environment variables are processed by `bc':
 
 
 Tag Table:
-Node: Top181
-Node: Introduction473
-Node: Description638
-Node: Command Line Options2097
-Node: Basic Elements2667
-Node: Numbers2842
-Node: Variables3610
-Node: Comments4724
-Node: Expressions5470
-Node: About Expressions and Special Variables5754
-Node: Basic Expressions7495
-Node: Relational Expressions10441
-Node: Boolean Expressions11451
-Node: Precedence12011
-Node: Special Expressions13176
-Node: Statements14563
-Node: Pseudo Statements21192
-Node: Functions21845
-Node: Math Library Functions27008
-Node: Examples27723
-Node: Readline and Libedit Options29707
-Node: Comparison with Other Implementations30738
-Node: Limits35990
-Node: Environment Variables37247
+Node: Top204
+Node: Introduction496
+Node: Description661
+Node: Command Line Options2120
+Node: Basic Elements2690
+Node: Numbers2865
+Node: Variables3633
+Node: Comments4747
+Node: Expressions5493
+Node: About Expressions and Special Variables5777
+Node: Basic Expressions7518
+Node: Relational Expressions10464
+Node: Boolean Expressions11474
+Node: Precedence12034
+Node: Special Expressions13199
+Node: Statements14586
+Node: Pseudo Statements21215
+Node: Functions21868
+Node: Math Library Functions27031
+Node: Examples27746
+Node: Readline and Libedit Options29730
+Node: Comparison with Other Implementations30761
+Node: Limits36013
+Node: Environment Variables37270
 
 End Tag Table

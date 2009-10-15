@@ -9,12 +9,13 @@
 @c This file has the new style title page commands.
 @c Run `makeinfo' rather than `texinfo-format-buffer'.
 
-@smallbook
+@c smallbook
 
 @c tex
 @c \overfullrule=0pt
 @c end tex
 
+@dircategory Math
 @ifinfo
 @direntry
 * bc: (bc).                    An arbitrary precision calculator language.

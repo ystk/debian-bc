@@ -1,5 +1,6 @@
-This is dc.info, produced by makeinfo version 4.8 from dc.texi.
+This is dc.info, produced by makeinfo version 4.13 from dc.texi.
 
+INFO-DIR-SECTION Math
 START-INFO-DIR-ENTRY
 * dc: (dc).                   Arbitrary precision RPN "Desktop Calculator".
 END-INFO-DIR-ENTRY
@@ -462,18 +463,18 @@ Email bug reports to <bug-dc@gnu.org>.
 
 
 Tag Table:
-Node: Top1109
-Node: Introduction1688
-Node: Invocation3037
-Node: Printing Commands3888
-Node: Arithmetic5933
-Node: Stack Control8850
-Node: Registers9334
-Ref: Registers-Footnote-110302
-Node: Parameters10454
-Node: Strings11719
-Node: Status Inquiry14876
-Node: Miscellaneous15936
-Node: Reporting bugs16909
+Node: Top1132
+Node: Introduction1711
+Node: Invocation3060
+Node: Printing Commands3911
+Node: Arithmetic5956
+Node: Stack Control8873
+Node: Registers9357
+Ref: Registers-Footnote-110325
+Node: Parameters10477
+Node: Strings11742
+Node: Status Inquiry14899
+Node: Miscellaneous15959
+Node: Reporting bugs16932
 
 End Tag Table
