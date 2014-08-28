@@ -1,10 +1,107 @@
+bc (1.06.95-9) unstable; urgency=medium
+
+  * Remove ancient unnecessary install-info dependencies.
+  * Fix some formatting issues with bc man page, 07_bc_man.diff
+    (Closes: #725898). Thanks to Bjarni Ingi Gislason for the patch.
+  * Bump standards version to 3.9.5
+
+ -- Ryan Kavanagh <rak@debian.org>  Sat, 14 Jun 2014 12:05:35 +0200
+
+bc (1.06.95-8) unstable; urgency=low
+
+  * Use makeinfo instead of obsoleted texi2html
+  * Reintroduce patch reading ~/.dcrc file at dc start, 06_read_dcrc.diff
+    (Closes: #582137) (LP: #918836)
+  * Drop old-style 'Home page:' entries in long description
+  * Added a gbp.conf to use pristine-tar and to sign tags
+
+ -- Ryan Kavanagh <rak@debian.org>  Sun, 02 Jun 2013 20:43:53 -0400
+
+bc (1.06.95-7) unstable; urgency=low
+
+  * New maintainer (Closes: #705771)
+  * Switch to Debian source format 3.0 (quilt)
+  * Updated copyright file with missing licenses and holders. Now in DEP-5
+    format.
+  * Bump standards version to 3.9.4
+  * Bump debhelper Build-Dependency to >= 9 and switch from old-style rules
+    with manual calls to dh_* to modern style dh rules
+  * Bump compat level to 9
+  * Drop libreadline5-dev from Build-Depends, it no longer exists in unstable
+  * Add a doc-base file for bc
+  * Fix a typo in bc, 01_typo_in_bc.diff
+  * Fix hyphens used as minus signs in manpages,
+    02_hyphens_as_minus_in_man.diff
+  * Fix array initialization bug, 03_array_initialize.diff (Closes: #671513,
+    #586969)
+  * Revert all inline patches and introduce them as logical quilt patches
+    + Set the info dircategory to Math, 04_info_dircategory.diff
+    + Notice read/write errors on input and output,
+      05_notice_read_write_errors.diff
+  * clean target now conforms to Debian Policy §4.9, "must undo any effects
+    that the build target may have had [...]"
+  * Added Vcs-Git/Vcs-Browser entries to debian/control
+  * Reintroduce the missing 1.06.94-3.1 changelog entry
+  * Get rid of postinst/postrm files, they were unneeded
+
+ -- Ryan Kavanagh <rak@debian.org>  Fri, 24 May 2013 07:26:52 -0400
+
+bc (1.06.95-6) unstable; urgency=low
+
+  * QA upload.
+  * Make bc Multi-Arch: foreign, so that it can satisfy (build-)dependencies
+    from other architectures (thanks, Sune Vuorela and Wookey; closes:
+    #681784, LP: #1098408).
+  * Add build-arch and build-indep targets.
+
+ -- Colin Watson <cjwatson@debian.org>  Tue, 30 Apr 2013 17:15:31 +0100
+
+bc (1.06.95-5) unstable; urgency=low
+
+  * Orphaned
+
+ -- John G. Hasler <jhasler@debian.org>  Fri, 19 Apr 2013 14:14:48 -0500
+
+bc (1.06.95-4) unstable; urgency=low
+
+  * Added #!/bin/sh to scripts.
+    Closes: #683571: postinst and postrm are not valid scripts
+
+ -- John G. Hasler <jhasler@debian.org>  Wed, 01 Aug 2012 17:42:42 -0500
+
+bc (1.06.95-3) unstable; urgency=low
+
+  * Applied patch from Pádraig Brady.
+    Closes: #608255: bc uses uninitialized memory
+
+  * Applied patch from Paul Dwerryhouse.
+    Closes: #472250: please return support for .dcrc file
+  
+  * Applied patch from Ian Jackson.
+    Closes: #488735: notice read and write errors on input and output
+  
+  * Generated bc.html and dc.html but something is still wrong.
+  
+  * Added homepage field to debian/control.
+  
+  * I can't see the problem with hyphens.
+  
+  * Fixed doc-base white space.
+  
+  * Added watch file.
+  
+  * I believe that the above changes deal with 558188.
+    Closes: #558188: Changes made in 1.06.94-3.1 NMU have been lost
+  
+ -- John G. Hasler <jhasler@debian.org>  Fri, 22 Jun 2012 21:00:45 -0500
+
 bc (1.06.95-2) unstable; urgency=low
 
   * Fixed errors in debian/rules that prevented info files from
     being correctly generated.
 
  -- John G. Hasler <jhasler@debian.org>  Thu, 15 Oct 2009 12:17:23 -0500
-
+  
 bc (1.06.95-1) unstable; urgency=low
 
   * New upstream release
@@ -12,11 +109,26 @@ bc (1.06.95-1) unstable; urgency=low
   
     Fixed libreadline build dependencies.
   
-    Cleaned up maintscripts, brought package up to current
-    standards-version, fixed menu entries, patched texi files
-    to add @dircategory lines.
+ -- John Hasler <jhasler@debian.org>  Sat, 03 Oct 2009 21:21:04 -0500
 
- -- John G. Hasler <jhasler@debian.org>  Tue, 06 Oct 2009 13:57:38 -0500
+bc (1.06.94-3.1) unstable; urgency=low
+
+  * Non-maintainer upload with John's permission.
+  * Apply patch to restore the .dcrc config file (closes: #472250)
+  * Merge patch from Ubuntu to notice read and write errors on
+    input and output (closes: #488735)
+  * Include the bc manual (HTML) in the bc binary package
+
+  * Bump Standards Version to 3.8.1
+  * Bump debhelper compatibility to 7
+  * debian/rules: replace "dh_clean -k" with "dh_prep"
+  * debian/control: Add homepage field
+  * Fix hyphens in the bc and dc manpages
+  * Add a watch file
+  * debian/dc.doc-base: Remove leading whitespace
+  * debian/dc.doc-base: Move to section Science/Mathematics
+
+ -- Francois Marier <francois@debian.org>  Thu, 16 Apr 2009 10:23:39 +1200
 
 bc (1.06.94-3) unstable; urgency=low
 

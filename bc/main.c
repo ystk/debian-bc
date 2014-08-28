@@ -358,9 +358,6 @@ use_quit (sig)
   errno = save;
 #else
   write (1, "\n(interrupt) Exiting bc.\n", 26);
-#ifdef READLINE
-  rl_initialize (); /* Clear readline buffer */
-#endif
 #if defined(LIBEDIT)
   if (edit != NULL)
     el_end(edit);
